@@ -5,28 +5,32 @@ export default function NavBar() {
   return (
     <Box
       sx={{
-        height: 80,
+        borderRadius: 2,
+        margin: 2,
+        width: 150,
+        height: "100% - 2",
+        bgcolor: "#ffffff",
+        justifyContent: "flex-start",
+        flexDirection: "column",
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
-        width: "100%",
-        background: "#000000",
+        p: 2,
       }}
     >
       <Link href="/">
         <Typography
           sx={{
-            color: "white",
+            color: "#000",
             px: 2,
             transition: "0.2s",
-            ":hover": { color: "green" },
+            ":hover": { color: "purple" },
           }}
         >
           Home
         </Typography>
       </Link>
       <Link href="/products/pants/redpant">
-        <Typography sx={{ color: "white" }}>Redpants</Typography>
+        <Typography sx={{ color: "#000" }}>Redpants</Typography>
       </Link>
     </Box>
   );
